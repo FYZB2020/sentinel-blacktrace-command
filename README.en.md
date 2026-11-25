@@ -255,7 +255,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\build.ps1
 
 Output goes to `dist/`. The build script runs selftest, benchmark, contentcheck, and musiccheck; any failure aborts the build.
 
-> The repository does not commit the eight MP3s (size and rights). They are included in the release zips. Add music you have the right to use when building from source.
+> The repository does not commit the eight MP3s (size and rights). They are included in the release zips. Add music you have the right to use when building from source. The build runs musiccheck and needs at least two tracks to pass, or temporarily comment out the musiccheck line in `tools/build.ps1`.
 
 ---
 

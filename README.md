@@ -279,7 +279,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\build.ps1
 
 输出在各自的 `dist/`。构建脚本会跑 selftest、benchmark、contentcheck 和 musiccheck；任何一项失败都会中止。
 
-> 仓库不提交 8 首 MP3（体积与版权归属原因）。发布 zip 里已经包含；从源码构建时，把你有权使用的音乐放进 `music/`。
+> 仓库不提交 8 首 MP3（体积与版权归属原因）。发布 zip 里已经包含；从源码构建时，把你有权使用的音乐放进 `music/`。构建脚本会跑 musiccheck，至少放两首才能通过，或者把 `tools/build.ps1` 里的 musiccheck 一行临时注释掉。
 
 ---
 
