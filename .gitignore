@@ -1,0 +1,13 @@
+dist/
+build/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.log
+*.zip
+zh/music/*.mp3
+zh/music/*.wav
+en/music/*.mp3
+en/music/*.wav
